@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>contact
+</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<a class="navbar-brand" href="index.html">
+<div class="logo">
+    <img src='./img/logo.jpeg' class="img-fluid">
+</div>
+</a>
+<div class="menu-toggle"></div>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li> 
+    <li><a href="Skills.html">Skills</a></li> 
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li> 
+  </ul>
+</nav>
+<div class="clearfix"></div>
+</header>
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.menu-toggle').click(function(){
+$('.menu-toggle').toggleClass('active')
+$('nav').toggleClass('active')
+})
+})
+function validate(){
+    var FirstName=document.getElementById("fname");
+    var LastName=document.getElementById("lname");
+    var Subject=document.getElementById("subject");
+  
+    if(FirstName.value()=="" || LastName.value()=="" || Subject.value()=="")
+      {
+        alert("No blanks allowed");
+        return false;
+      }
+      else
+      {
+        true;
+      }
+  
+  
+  }
+
+
+</script>
+<main id="home">
+<h1 class="contact">
+Contact Me
+</h1>
+
+</main>
+<div class="container">
+<form onsubmit="return validate()" action="submited.html">
+
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+<label for="Services">Services</label>
+<select id="Service" name="Service">
+<option value="Websited Development">Website Development</option>
+<option value="Music Production">Music Production</option>
+<option value="Graphic Design">Graphic Design</option>
+</select>
+
+<label for="subject">Subject</label>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+<input type="submit" value="Submit">
+
+</form>
+</div>
+<div class="footer">
+<!-- social links -->
+<div class="social-links">
+<a href="https://www.facebook.com/nkosinathilavisa.siyeni"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/laidobeats_sa/"><i class="fa fa-instagram"></i></a>
+<a href="https://github.com/Nkosi97"><i class="fa fa-github"></i></a>
+</div>
+<p class="rights">Copyright &copy;2020 CR3ATIVE</p>
+</div>
+<script src="javascript.js"></script>
+</body>
+
+</html>

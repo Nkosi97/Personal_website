@@ -1,0 +1,362 @@
+/*************************
+SET
+********************************/
+@import url('https://fonts.googleapis.com/css?family=Poppins:20');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body
+{
+    height: 100%;
+    margin:0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background: url('./img/back.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+/*************************************************
+HEADER
+************************************/
+
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.logo{
+    color: #069370;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+/******************************
+NAV
+***********************************************/
+
+nav{
+    float: right;
+
+}
+.clearfix{
+    clear: both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+    font-weight: 550;
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+    background: #069370;
+    color: #fff;
+    transition: 0.5s;
+    
+
+}
+
+/******************************************************
+MEDIA
+***************************************************/
+@media (max-width: 1250px)
+{
+header{
+    margin: 20px;
+}
+}
+@media (max-width: 768px)
+{
+.menu-toggle{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #069370;
+   
+}
+.menu-toggle:before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    line-height: 40px;
+}
+.menu-toggle.active:before{
+    content: '\f00d';
+    
+}
+nav{
+    display: none;
+}
+nav.active{
+    display: block;
+    width: 100%;
+}
+nav.active ul{
+    display: block;
+}
+nav.active ul li a{
+    margin: 0;
+}
+
+
+}
+ /******************************************************************
+ HOME
+ *******************************************/
+ h1, h2{
+    margin: 0;
+    font-weight: 400;
+}
+.Name{
+    font-size: 5rem;
+    color: #ffc609;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+   
+     
+}
+.Description{
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+/*****************************
+ABOUT
+******************************/
+
+.About{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    
+     
+}
+.info{
+    color: #cfaa05;
+    text-align: center;
+    padding-bottom: 100px;
+    font-weight: 600;
+    
+}
+.avatar {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 250px;
+    height: 200px;
+    border-radius: 100%;
+  }
+/**********************************************
+CONTACT CONTAINER
+************************************************/
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ffa007; 
+    border-radius: 4px; 
+    box-sizing:border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;}
+    .container {
+    background-color: #069370;
+    padding: 5px;
+    width: 85%;
+    max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  width: 80%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    box-align: center;
+      }
+/**********************************
+FOOTER
+**********************************/
+.footer 
+{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 11%;
+        width: 100%;
+        background-color: #069370;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50em;
+    
+      }
+/*************************************************************
+SOCIAL LINKS
+*******************************************************************/
+ 
+    .social-links a{
+        height:30px;
+        width:30px;
+        background-color: black;
+        border-radius:3px;
+        display: inline-block;
+        border:1px solid #000000;
+        line-height: 28px;
+        text-align: center;
+        margin:0 5px;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+    .social-links a:hover{
+        background-color: #fff;
+    }
+    .social-links a .fa{
+        color: #f3c808;
+        font-size:12px;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+    .social-links a:hover .fa{
+        color:#000000;
+    }
+    .img-fluid{
+        width: 50px;
+        height: 50px;
+        /*border-radius: 40%;*/
+        /*overflow: hidden;*/
+        margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+  margin-bottom:100px;
+    }
+
+    /***************************************************
+    Hd
+    ***************************************************/
+    .contact{
+        font-size: 2rem;
+        color: #ffc609;
+        text-align: center;
+        
+         
+    }   
+      .Portfolio {
+        font-size: 50px;
+        word-break: break-all;
+        color: #ffc609;
+        text-align: center;
+      }
+
+/****************************************************
+Cards
+*****************************************************/
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .75em;
+    padding: .75em;
+    padding-bottom: 20%;
+    padding-top: 5%;
+    
+}
+.cards .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: auto;
+    text-align: center;
+    background-color: rgba(126, 135, 141, 0.911);
+    
+    
+}
+.card:hover {
+    transform: scale(1.1);}
+ 
+.cards .card img {
+    height: 180px;
+    
+    
+}
+
+@media screen and (min-width: 769px){
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    
+}
+/*****************************************************************
+TITTLES
+***********************************************************/
+.brand{
+    color: #fff131;
+}
+.title{
+    color: white;
+    font-weight: 800;
+}
+.by{
+    color: black;
+    font-weight: 800;
+}
+
+.intro{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
