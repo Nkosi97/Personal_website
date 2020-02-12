@@ -100,7 +100,7 @@ header{
     margin: 20px;
 }
 }
-@media (max-width: 768px)
+@media (max-width: 640px)
 {
 .menu-toggle{
     display: block;
@@ -136,6 +136,7 @@ nav.active ul{
 nav.active ul li a{
     margin: 0;
 }
+
 
 
 }
@@ -332,13 +333,14 @@ Cards
     
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 640px){
     .cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     
     }
-
     
+   
+
 }
 /*****************************************************************
 TITTLES
